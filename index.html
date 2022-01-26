@@ -1,20 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div class="container">
-		<div id="buttons">
-            <button id="button-rock">Kamień</button>
-            <button id="button-paper">Papier</button>
-            <button id="button-scissors">Nożyce</button>
-        </div>
-		<div id="messages"></div>
-	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Kamień, papier, nożyce</title>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Raleway&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<header class="splash">
+      		<div class="container">
+          		<i class="fas fa-hand-paper"></i>
+              	<h1 class="page-title">Papier - Kamień - Nożyce</h1>
+              	<h2 class="page-subtitle">Zagraj w grę!</h2>
+      		</div>
+    	</header>
+
+		<div class="rules">
+			<div class="container">
+				<h3 class="section-title">Zasady gry</h3>
+				<p>W każdej turze obydwaj gracze, na umówiony sygnał, szybko wystawiają przed siebie dłoń,<br>pokazując jeden z symboli:</p>
+				<div class="row">
+					<div class="col">
+						<div class="card">
+							<i class="fas fa-sticky-note"></i>
+							<div class="card-body">
+								<h4 class="card-title">PAPIER</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<i class="far fa-gem"></i>
+							<div class="card-body">
+								<h4 class="card-title">KAMIEŃ</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card">
+							<i class="fas fa-cut"></i>
+							<div class="card-body">
+								<h4 class="card-title">NOŻYCE</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p>Gracz, który pokazał silniejszy symbol, otrzymuje jeden punkt.<br>W przypadku pokazania dwóch takich samych symboli następuje remis – punktu brak. <br>Symbole mają swoją hierarchię:<br>Kamień tępi nożyczki<br>Nożyce tną papier<br>Papier owija kamień<br>Czyli w praktyce - jeżeli ty pokażesz kamień, a twój przeciwnik nożyczki, otrzymujesz jeden punkt.<br>Jeżeli natomiast Twój przeciwnik pokazałby papier (podczas gdy ty masz kamień, punkt należy do niego.<br>W konfiguracji nożyczki - papier wygrywa gracz, który pokaże nożyczki.</p>
+			</div>
+		</div>
+
+		<div class="play">
+			<div class="container">
+				<i class="fas fa-arrow-down"></i>
+				<h1 class="page-title">Let's play!</h1>
+					<div id="buttons" class="buttons">
+						<button type="button" id="button-rock" class="button-rock">Kamień</button>
+						<button type="button" id="button-paper" class="button-paper">Papier</button>
+						<button type="button" id="button-scissors" class="button-scissors">Nożyce</button>
+					</div>
+				<div id="messages" class="message"></div>
+			</div>
+		</div>
+
+	   <footer class="footer">
+			<div class="container">
+				<div class="row">
+					<p>Spodobało się? Podziel się tym z przyjaciółmi!</p>
+				</div>
+				<div class="row">
+					<ul>
+					<li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+					<li><a href="#"><i class="fab fa-behance-square"></i>Behance</a></li>
+					</ul>
+				</div>
+			</div>
+    	</footer>
+
+		<script src="js/functions.js"></script>
+		<script src="js/script.js"></script>
+  	</body>
 </html>
