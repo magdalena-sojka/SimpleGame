@@ -146,6 +146,7 @@ p {
   border-radius: 50%;
   text-align: center;
   position: relative;
+  transform: translateY(12px);
 }
 
 .buttons {
@@ -174,8 +175,9 @@ p {
   font-size: 30px;
   color:  $color-main;
   font-family: $font-text;
-  padding: 12px;
+  padding: 12px 0;
   text-align: center;
+  height: 15vh;
 }
 
 .footer {
